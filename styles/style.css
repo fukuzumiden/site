@@ -7,7 +7,6 @@ a {
     color: #000000;
  }
 
-
  a[class="hover1"]:hover {
     background-color: rgb(234, 73, 52);
     color:#ffffff  
@@ -29,10 +28,11 @@ ul {
     list-style: none;
  }
 
+
  header {
     width: 100%;
     padding: 3% 23.5%;
-    background-color: #fff;
+    background-color: #fcfbf5;
     /* position: fixed; */
     top: 0;
     display: flex;
@@ -45,7 +45,6 @@ header h1 {
     margin: 0; padding: 0;
     font-size: 20px;
     font-weight: normal;
-    /* font-family: "游明朝 Medium","游明朝体","Noto Serif JP","ヒラギノ明朝",serif; */
  }
 
  header ul {
@@ -67,20 +66,15 @@ header h1 {
     margin: 0;
     padding: 0px;
     height: 100%;
-    /* font-family: "游明朝 Medium","游明朝体","Helvetica Neue",
-    Arial,
-    "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans",
-    Meiryo,
-    sans-serif; */
-    background-color: #ffffff;
-    font-family:"游明朝 Medium","游明朝体","Noto Serif JP","ヒラギノ明朝",serif;
+    background-color: #fcfbf5;
+    /* 欧文フォント　Verdana,"Helvetica Neue", */
+    font-family:serif,"游明朝 Medium","游明朝体","Noto Serif JP","ヒラギノ明朝";
  }
 
  div[class="captions"]{
     padding: 3% 21%;
     height:700px;
-    background-color: #ffffff;
+    background-color: #fcfbf5;
  }
 
  .caption ul {
@@ -111,24 +105,30 @@ header h1 {
  .tanka div{
     padding-left:23.5%;
     color:#818181;
-    font-size: 12px;
     font-family: "Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3","游ゴシック","游ゴシック体 Medium",sans-serif;
  }
  .tanka h1{
-    margin-top: 140px; 
+    margin: 150px 0 180px 0; 
     padding: 0 0;
-    font-size: 19px;
+    font-size: 17px;
+    color:#4b4b4b;
     text-align: center;
-    font-weight: normal;
+    font-weight:normal;
     /* font-family:"游明朝 Medium","游明朝体","Noto Serif JP","ヒラギノ明朝",serif; */
  }
- .tanka ul{
-     padding-left:30%;
-     font-size: 16px;
+ .tanka p{
+    padding-left:30%;
+    margin-bottom:250px;
+    font-size: 18px;
  }
- .tanka li{
-     margin:160px 0;
- }
+
+.pc_area{
+    display:block;
+}
+.phone_area{
+    display:none;
+}
+ 
 
 
  footer {
@@ -138,7 +138,7 @@ header h1 {
     padding:0 21%;
     padding-top:1%;
     padding-bottom:4%;
-    background-color: rgb(255, 255, 255);
+    background-color: #fcfbf5;
     /* display: flex; */
     /* align-items: center; */
     border-top-style: solid;
@@ -156,10 +156,14 @@ footer p,footer a{
 
 
  @media screen and (max-width: 480px) {
+    body{
+        width:420px;
+    }
+
     header {
         width: 100%;
         padding: 3% 13%;
-        background-color: rgb(255, 255, 255);
+        background-color: #fcfbf5;
         /* position: fixed; */
         top: 0;
         display: flex;
@@ -175,7 +179,7 @@ footer p,footer a{
 
      header li {
         margin: 0 0 0 20px;
-        font-size: 8px;
+        font-size: 10px;
      }
 
      .caption span{
@@ -193,6 +197,9 @@ footer p,footer a{
          font-size:12px;
      }
 
+     .tanka main{
+         
+     }
      .tanka div{
         padding-left:13%;
         color:#818181;
@@ -200,20 +207,29 @@ footer p,footer a{
         font-family: "Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3","游ゴシック","游ゴシック体 Medium",sans-serif;
      }
      .tanka h1{
-        margin-top: 90px; 
+        margin: 100px 0; 
         padding: 0 0;
-        font-size: 12px;
+        font-size: 10px;
+        color:#4b4b4b;
         text-align: center;
         font-weight: normal;
         /* font-family:"游明朝 Medium","游明朝体","Noto Serif JP","ヒラギノ明朝",serif; */
      }
-     .tanka ul{
+    
+    .tanka p{
         padding-left:9%;
-        font-size: 9px;
+        margin-bottom:140px;
+        font-size: 10px;
     }
-    .tanka li{
-        margin:140px 0;
+
+    .pc_area{
+        display:none;
     }
+    .phone_area{
+        display:block;
+    }
+
+
 
     footer {
         width: 95%;
@@ -222,7 +238,7 @@ footer p,footer a{
         padding:0 8%;
         padding-top:1%;
         padding-bottom:4%;
-        background-color: rgb(255, 255, 255);
+        background-color: #fcfbf5;
         /* display: flex; */
         /* align-items: center; */
         border-top-style: solid;
