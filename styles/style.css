@@ -92,7 +92,6 @@ header h1 {
 .caption li {
     padding: 5% 0 10% 0;
     font-size: 20px;
-    /* font-family:"游明朝 Medium","游明朝体","Noto Serif JP","ヒラギノ明朝",serif; */
  }
 
  div[class="profile"]{
@@ -114,7 +113,6 @@ header h1 {
     color:#4b4b4b;
     text-align: center;
     font-weight:normal;
-    /* font-family:"游明朝 Medium","游明朝体","Noto Serif JP","ヒラギノ明朝",serif; */
  }
  .tanka p{
     padding-left:30%;
@@ -139,8 +137,6 @@ header h1 {
     padding-top:1%;
     padding-bottom:4%;
     background-color: #fcfbf5;
-    /* display: flex; */
-    /* align-items: center; */
     border-top-style: solid;
     border-width: 1px;
     border-color:#c1c1c1;
@@ -210,7 +206,6 @@ footer p,footer a{
         color:#4b4b4b;
         text-align: center;
         font-weight: normal;
-        /* font-family:"游明朝 Medium","游明朝体","Noto Serif JP","ヒラギノ明朝",serif; */
      }
     
     .tanka p{
@@ -236,8 +231,6 @@ footer p,footer a{
         padding-top:1%;
         padding-bottom:4%;
         background-color: #fcfbf5;
-        /* display: flex; */
-        /* align-items: center; */
         border-top-style: solid;
         border-width: 1px;
         border-color:#c1c1c1;
