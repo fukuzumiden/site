@@ -28,6 +28,13 @@ ul {
     list-style: none;
  }
 
+ .pc_area{
+    display:block;
+}
+.phone_area{
+    display:none;
+}
+
 
  header {
     width: 100%;
@@ -99,10 +106,11 @@ header h1 {
  }
 
  main[class="tanka"]{
-     padding:1% 0%;
+     padding:0% 0%;
  }
  .tanka div{
-    padding-left:23.5%;
+    padding-left:23.4%;
+    padding-top:20px;
     color:#818181;
     font-family: "Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3","游ゴシック","游ゴシック体 Medium",sans-serif;
  }
@@ -120,12 +128,7 @@ header h1 {
     font-size: 18px;
  }
 
-.pc_area{
-    display:block;
-}
-.phone_area{
-    display:none;
-}
+
  
 
 
