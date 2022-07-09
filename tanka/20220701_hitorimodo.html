@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['\$','\$'],['\\(','\\)']],processEscapes:true},CommonHTML: {matchFontHeight:false}});</script>
-    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    <meta charset="UTF-8">
+    <title>ひとりモード</title>
+    <meta name="viewport" content="width=device-width">
 
     <link rel="icon" href="../icon/japan.svg">
     <link href="https://use.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet">
-    <link href="../styles/style.css" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>ひとりモード</title>
-
+    <link href="/styles/style.css" rel="stylesheet">
+    <!-- latex -->
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['\$','\$'],['\\(','\\)']],processEscapes:true},CommonHTML: {matchFontHeight:false}});</script>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-QDEYKJZRFX"></script>
     <script>
@@ -19,23 +20,18 @@
     gtag('js', new Date());
     gtag('config', 'G-QDEYKJZRFX');
     </script>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="/js/load-common-components.js"></script>
   </head>
 
   <body>
-    <header>
-        <h1>
-            <a href="../index.html">福住電</a>
-        </h1>
-        <nav>
-            <ul>
-               <li><a class="hover1" href="../index.html">短歌</a></li>   
-               <li><a class="hover1" href="../profile/profile.html">連絡先</a></li>
-            </ul>
-        </nav>
-    </header>
+    <script>header();</script>
 
     <main class="tanka pc_area">
-        <div>2022-07-01</div>
+        <div class="date">2022-07-01</div>
         <h1>ひとりモード</h1>
         <p>街灯が水草である旧道で溶けた魚と<ruby>吻<rp>(</rp><rt>くち</rt><rp>)</rp></ruby>をあわせる</p>
         <p>君のため　パイポ散らかす剛腕をきんちょうさせる菱の実の意趣</p>
@@ -56,7 +52,7 @@
     </main>
 
     <main class="tanka phone_area">
-        <div>2022-07-01</div>
+        <div class="date">2022-07-01</div>
         <h1>ひとりモード</h1>
         <p>街灯が水草である旧道で溶けた魚と吻をあわせる</p>
         <p>君のため　パイポ散らかす剛腕をきんちょうさせる菱の実の意趣</p>
@@ -76,13 +72,7 @@
         <p>ワンネスを&lt;em&gt;で囲むコダワリもそこはかとない余熱であること</p>
     </main>
     
-    <footer>
-        <nav>
-            <div>
-                <p>&copy 2022 <a class="hover4" href="../index.html">福住電</a></p>
-            </div>
-        </nav>
-    </footer>
+    <script>footer();</script>
 
   </body>
 </html>
