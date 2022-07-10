@@ -172,7 +172,7 @@ header h1 {
    margin:200px auto;
    padding:50px 0;
    text-align: center;
-   border: #282828 1px solid; 
+   /* border: #282828 1px solid;  */
  } 
  .art h1{
    font-size: 17px;
