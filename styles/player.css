@@ -1,0 +1,174 @@
+:root {
+	--orange: hsla(32, 100%, 50%, 1);
+	--gray: rgb(237, 237, 237);
+	--white: #fdfdfd;
+	--black: #000000;
+
+	/* abstract our colours */
+	--boxMain: var(--white);
+	--boxSecond: var(--gray);
+	--boxHigh: var(--orange);
+
+	--border: 1vmin solid var(--black);
+	--borderRad: 2px;
+}
+
+* {box-sizing: border-box;}
+
+#boombox {
+	width: 82vw; max-width: 400px; margin: 0 auto;
+    margin-top:200px;
+    margin-bottom:50px;
+    border:solid;
+}
+@media screen and (max-width: 480px) {
+	#boombox {max-width: 600px;}
+}
+
+.master-controls {
+	display: grid;
+	grid-template-rows: repeat(2, auto);
+	grid-template-columns: repeat(2, 1fr) 12%;
+	grid-template-areas:
+		"volin panin power";
+	justify-items: center; align-items: center;
+	padding: 1vmax;
+	background-color: var(--white);
+	border-bottom: var(--border);
+}
+/* change control grid areas for smaller boom box */
+@media screen and (max-width: 570px) {
+	.master-controls {
+		grid-gap: 10px;
+		grid-template-columns: 16% 1fr 12%;
+		grid-template-areas:
+			"vollab volin power"
+	}
+}
+
+.master-controls input, .master-controls label {display: block;}
+.master-controls input::before, .master-controls input::after {
+	line-height: 1vh; color: var(--black);
+}
+.master-controls input::before {padding-right: 1vw;}
+.master-controls input::after {padding-left: 1vw;}
+
+.control-volume {grid-area: volin;}
+.control-volume::before {content: '';}
+.control-volume::after {content: '';}
+label[for="volume"] {grid-area: vollab; margin-top: 15px;}
+
+@media screen and (max-width: 570px) {
+	label[for="volume"] {margin-top: 0px;}
+	.control-volume {margin-bottom: 20px;}
+}
+
+.control-power {
+	grid-area: power; align-self: center;
+	width: 25px; height: 25px;
+	border: 1px solid var(--black); border-radius: 30px;
+	cursor: pointer;
+}
+.control-power span {display: none;}
+
+
+/* tape area ~~~~~~~~~~~~~~~~~~~~~~ */
+.tape {
+    background:#000019;
+    margin:15px;
+    border:solid;
+	display: grid;
+	grid-template-rows: 6vh 10vh 6vh;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-areas: "tape tape tape tape tape"
+		"back rewind play ff next";
+}
+@media screen and (max-width: 570px) {
+	.tape {width: 80%; margin-top: 30vh;}
+}
+audio {
+	grid-area: tape;
+}
+/*TODO GIVE BUTTONS CLASSES*/
+[class^="tape-controls"] {
+	border: none;
+}
+[class^="tape-controls"] span {display: none;}
+.tape-controls-play {grid-area: play;}
+
+/* ~~~~~~~~~~~~~~~~ All the crazy range styling */
+input[type=range] {
+  -webkit-appearance: none;
+    width: 30vw;
+  background: transparent;
+}
+/* set min & max for different screen sizes */
+@media screen and (min-width: 1100px) {
+	input[type=range] {width: 270px;}
+}
+@media(max-width: 680px) {
+	input[type=range] {
+		width: 180px;
+	}
+}
+@media(max-width: 380px) {
+	input[type=range] {
+		width: 130px;
+	}
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  margin-top: -1vh;
+	height: 3vh; width: 0.8vw;
+	border: 0.2vmin solid var(--black);
+  border-radius: var(--borderRad);
+  background-color: var(--boxMain);
+  cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+  height: 1vh;
+  cursor: pointer;
+  background-color: var(--black);
+  border-radius: var(--borderRad);
+}
+
+
+input[type=range]:focus {
+  outline: none;
+}
+
+
+/*~~~~~~~~~~~~~~~~ the play pause & power icons*/
+[data-playing] {
+    background: transparent url('data:image/svg+xml;charset=utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2064%2064%22%20enable-background%3D%22new%200%200%2064%2064%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22SMILE_1_%22%20fill%3D%22white%22%3E%20%3Cpath%20d%3D%22M46.4257965%2C41.0966988c-0.4990005-0.2343979-1.0937958-0.0205002-1.3311005%2C0.4775009%20C44.9511986%2C41.8769989%2C41.4667969%2C49%2C32%2C49c-9.4491997%2C0-12.9384995-7.0966988-13.0946999-7.4238014%20c-0.2334003-0.5-0.8262005-0.7138977-1.3290997-0.482399c-0.5%2C0.2342987-0.7158012%2C0.8291016-0.4824009%2C1.3300018%20C17.2577991%2C42.7733994%2C21.2266006%2C51%2C32%2C51s14.7421989-8.2266006%2C14.9062958-8.5761986%20C47.1395988%2C41.9238014%2C46.9237976%2C41.3311005%2C46.4257965%2C41.0966988z%22%2F%3E%20%3Cpath%20d%3D%22M32%2C0C14.3268995%2C0%2C0%2C14.3268003%2C0%2C32c0%2C17.6730995%2C14.3268995%2C32%2C32%2C32s32-14.3269005%2C32-32%20C64%2C14.3268003%2C49.6730957%2C0%2C32%2C0z%20M32%2C62C15.4579%2C62%2C2%2C48.542099%2C2%2C32S15.4579%2C2%2C32%2C2s30%2C13.4579%2C30%2C30S48.542099%2C62%2C32%2C62z%22%2F%3E%20%3Cpath%20d%3D%22M22%2C30c3.3136997%2C0%2C6-2.6863003%2C6-6s-2.6863003-6-6-6s-6%2C2.6863003-6%2C6S18.6863003%2C30%2C22%2C30z%20M22%2C20%20c2.2056007%2C0%2C4%2C1.7943993%2C4%2C4s-1.7943993%2C4-4%2C4s-4-1.7943993-4-4S19.7943993%2C20%2C22%2C20z%22%2F%3E%20%3Cpath%20d%3D%22M42%2C18c-3.3137016%2C0-6%2C2.6863003-6%2C6s2.6862984%2C6%2C6%2C6c3.3136978%2C0%2C6-2.6863003%2C6-6S45.3136978%2C18%2C42%2C18z%20M42%2C28%20c-2.2056007%2C0-4-1.7943993-4-4s1.7943993-4%2C4-4c2.2055969%2C0%2C4%2C1.7943993%2C4%2C4S44.2055969%2C28%2C42%2C28z%22%2F%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat center center;
+    background-size: 100%;
+}
+[data-playing]:hover {
+	background: transparent url('data:image/svg+xml;charset=utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2064%2064%22%20enable-background%3D%22new%200%200%2064%2064%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22SMILE_1_%22%20fill%3D%22white%22%3E%20%3Cpath%20d%3D%22M46.4257965%2C41.0966988c-0.4990005-0.2343979-1.0937958-0.0205002-1.3311005%2C0.4775009%20C44.9511986%2C41.8769989%2C41.4667969%2C49%2C32%2C49c-9.4491997%2C0-12.9384995-7.0966988-13.0946999-7.4238014%20c-0.2334003-0.5-0.8262005-0.7138977-1.3290997-0.482399c-0.5%2C0.2342987-0.7158012%2C0.8291016-0.4824009%2C1.3300018%20C17.2577991%2C42.7733994%2C21.2266006%2C51%2C32%2C51s14.7421989-8.2266006%2C14.9062958-8.5761986%20C47.1395988%2C41.9238014%2C46.9237976%2C41.3311005%2C46.4257965%2C41.0966988z%22%2F%3E%20%3Cpath%20d%3D%22M32%2C0C14.3268995%2C0%2C0%2C14.3268003%2C0%2C32c0%2C17.6730995%2C14.3268995%2C32%2C32%2C32s32-14.3269005%2C32-32%20C64%2C14.3268003%2C49.6730957%2C0%2C32%2C0z%20M32%2C62C15.4579%2C62%2C2%2C48.542099%2C2%2C32S15.4579%2C2%2C32%2C2s30%2C13.4579%2C30%2C30S48.542099%2C62%2C32%2C62z%22%2F%3E%20%3Cpath%20d%3D%22M22%2C30c3.3136997%2C0%2C6-2.6863003%2C6-6s-2.6863003-6-6-6s-6%2C2.6863003-6%2C6S18.6863003%2C30%2C22%2C30z%20M22%2C20%20c2.2056007%2C0%2C4%2C1.7943993%2C4%2C4s-1.7943993%2C4-4%2C4s-4-1.7943993-4-4S19.7943993%2C20%2C22%2C20z%22%2F%3E%20%3Cpath%20d%3D%22M42%2C18c-3.3137016%2C0-6%2C2.6863003-6%2C6s2.6862984%2C6%2C6%2C6c3.3136978%2C0%2C6-2.6863003%2C6-6S45.3136978%2C18%2C42%2C18z%20M42%2C28%20c-2.2056007%2C0-4-1.7943993-4-4s1.7943993-4%2C4-4c2.2055969%2C0%2C4%2C1.7943993%2C4%2C4S44.2055969%2C28%2C42%2C28z%22%2F%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat center center;
+	background-size: 100%;
+}
+[data-playing="true"] {
+	background: transparent url('data:image/svg+xml;charset=utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2064%2064%22%20enable-background%3D%22new%200%200%2064%2064%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22SMILE_1_%22%20fill%3D%22white%22%3E%20%3Cpath%20d%3D%22M46.4257965%2C41.0966988c-0.4990005-0.2343979-1.0937958-0.0205002-1.3311005%2C0.4775009%20C44.9511986%2C41.8769989%2C41.4667969%2C49%2C32%2C49c-9.4491997%2C0-12.9384995-7.0966988-13.0946999-7.4238014%20c-0.2334003-0.5-0.8262005-0.7138977-1.3290997-0.482399c-0.5%2C0.2342987-0.7158012%2C0.8291016-0.4824009%2C1.3300018%20C17.2577991%2C42.7733994%2C21.2266006%2C51%2C32%2C51s14.7421989-8.2266006%2C14.9062958-8.5761986%20C47.1395988%2C41.9238014%2C46.9237976%2C41.3311005%2C46.4257965%2C41.0966988z%22%2F%3E%20%3Cpath%20d%3D%22M32%2C0C14.3268995%2C0%2C0%2C14.3268003%2C0%2C32c0%2C17.6730995%2C14.3268995%2C32%2C32%2C32s32-14.3269005%2C32-32%20C64%2C14.3268003%2C49.6730957%2C0%2C32%2C0z%20M32%2C62C15.4579%2C62%2C2%2C48.542099%2C2%2C32S15.4579%2C2%2C32%2C2s30%2C13.4579%2C30%2C30S48.542099%2C62%2C32%2C62z%22%2F%3E%20%3Cpath%20d%3D%22M22%2C30c3.3136997%2C0%2C6-2.6863003%2C6-6s-2.6863003-6-6-6s-6%2C2.6863003-6%2C6S18.6863003%2C30%2C22%2C30z%20M22%2C20%20c2.2056007%2C0%2C4%2C1.7943993%2C4%2C4s-1.7943993%2C4-4%2C4s-4-1.7943993-4-4S19.7943993%2C20%2C22%2C20z%22%2F%3E%20%3Cpath%20d%3D%22M42%2C18c-3.3137016%2C0-6%2C2.6863003-6%2C6s2.6862984%2C6%2C6%2C6c3.3136978%2C0%2C6-2.6863003%2C6-6S45.3136978%2C18%2C42%2C18z%20M42%2C28%20c-2.2056007%2C0-4-1.7943993-4-4s1.7943993-4%2C4-4c2.2055969%2C0%2C4%2C1.7943993%2C4%2C4S44.2055969%2C28%2C42%2C28z%22%2F%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat center center;
+	background-size: 100%;
+}
+[data-playing="true"]:hover {
+				background: transparent url('data:image/svg+xml;charset=utf8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2064%2064%22%20enable-background%3D%22new%200%200%2064%2064%22%20xml%3Aspace%3D%22preserve%22%3E%3Cg%20id%3D%22SMILE_1_%22%20fill%3D%22white%22%3E%20%3Cpath%20d%3D%22M46.4257965%2C41.0966988c-0.4990005-0.2343979-1.0937958-0.0205002-1.3311005%2C0.4775009%20C44.9511986%2C41.8769989%2C41.4667969%2C49%2C32%2C49c-9.4491997%2C0-12.9384995-7.0966988-13.0946999-7.4238014%20c-0.2334003-0.5-0.8262005-0.7138977-1.3290997-0.482399c-0.5%2C0.2342987-0.7158012%2C0.8291016-0.4824009%2C1.3300018%20C17.2577991%2C42.7733994%2C21.2266006%2C51%2C32%2C51s14.7421989-8.2266006%2C14.9062958-8.5761986%20C47.1395988%2C41.9238014%2C46.9237976%2C41.3311005%2C46.4257965%2C41.0966988z%22%2F%3E%20%3Cpath%20d%3D%22M32%2C0C14.3268995%2C0%2C0%2C14.3268003%2C0%2C32c0%2C17.6730995%2C14.3268995%2C32%2C32%2C32s32-14.3269005%2C32-32%20C64%2C14.3268003%2C49.6730957%2C0%2C32%2C0z%20M32%2C62C15.4579%2C62%2C2%2C48.542099%2C2%2C32S15.4579%2C2%2C32%2C2s30%2C13.4579%2C30%2C30S48.542099%2C62%2C32%2C62z%22%2F%3E%20%3Cpath%20d%3D%22M22%2C30c3.3136997%2C0%2C6-2.6863003%2C6-6s-2.6863003-6-6-6s-6%2C2.6863003-6%2C6S18.6863003%2C30%2C22%2C30z%20M22%2C20%20c2.2056007%2C0%2C4%2C1.7943993%2C4%2C4s-1.7943993%2C4-4%2C4s-4-1.7943993-4-4S19.7943993%2C20%2C22%2C20z%22%2F%3E%20%3Cpath%20d%3D%22M42%2C18c-3.3137016%2C0-6%2C2.6863003-6%2C6s2.6862984%2C6%2C6%2C6c3.3136978%2C0%2C6-2.6863003%2C6-6S45.3136978%2C18%2C42%2C18z%20M42%2C28%20c-2.2056007%2C0-4-1.7943993-4-4s1.7943993-4%2C4-4c2.2055969%2C0%2C4%2C1.7943993%2C4%2C4S44.2055969%2C28%2C42%2C28z%22%2F%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3Cg%3E%3C%2Fg%3E%3C%2Fsvg%3E') no-repeat center center;
+			background-size: 100%;
+}
+[data-power] {
+	background: var(--boxSecond) url('data:image/svg+xml; charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M400 54.1c63 45 104 118.6 104 201.9 0 136.8-110.8 247.7-247.5 248C120 504.3 8.2 393 8 256.4 7.9 173.1 48.9 99.3 111.8 54.2c11.7-8.3 28-4.8 35 7.7L162.6 90c5.9 10.5 3.1 23.8-6.6 31-41.5 30.8-68 79.6-68 134.9-.1 92.3 74.5 168.1 168 168.1 91.6 0 168.6-74.2 168-169.1-.3-51.8-24.7-101.8-68.1-134-9.7-7.2-12.4-20.5-6.5-30.9l15.8-28.1c7-12.4 23.2-16.1 34.8-7.8zM296 264V24c0-13.3-10.7-24-24-24h-32c-13.3 0-24 10.7-24 24v240c0 13.3 10.7 24 24 24h32c13.3 0 24-10.7 24-24z" fill="black" /></svg>') no-repeat center center;
+	background-size: 40% 60%;
+}
+[data-power]:hover, [data-power="on"] {
+	background: var(--boxSecond) url('data:image/svg+xml; charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M400 54.1c63 45 104 118.6 104 201.9 0 136.8-110.8 247.7-247.5 248C120 504.3 8.2 393 8 256.4 7.9 173.1 48.9 99.3 111.8 54.2c11.7-8.3 28-4.8 35 7.7L162.6 90c5.9 10.5 3.1 23.8-6.6 31-41.5 30.8-68 79.6-68 134.9-.1 92.3 74.5 168.1 168 168.1 91.6 0 168.6-74.2 168-169.1-.3-51.8-24.7-101.8-68.1-134-9.7-7.2-12.4-20.5-6.5-30.9l15.8-28.1c7-12.4 23.2-16.1 34.8-7.8zM296 264V24c0-13.3-10.7-24-24-24h-32c-13.3 0-24 10.7-24 24v240c0 13.3 10.7 24 24 24h32c13.3 0 24-10.7 24-24z" fill="green" /></svg>') no-repeat center center;
+	background-size: 40% 60%;
+}

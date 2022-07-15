@@ -1,0 +1,63 @@
+
+main[class="art"]{
+    padding:0% 0%;
+    font-family: "Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3","游ゴシック","游ゴシック体 Medium",sans-serif;
+ }
+ div[class="description"] {
+   width:400px;
+   margin:150px auto;
+   padding:50px 0;
+   text-align: center;
+   /* border: #282828 1px solid;  */
+ } 
+ .art h1{
+   font-size: 17px;
+   color:#2b2b2b;
+   font-weight:normal;
+}
+p[class="description"]{
+   margin-top:40px;
+   color:#7c7c7c;
+   font-size: 13px;
+}
+.art_image {
+   text-align: center;
+   margin-bottom:100px;
+}
+.art_image:last-child{
+   margin-bottom:100px;
+}
+.A4{
+   /* width:595px;
+   height:842px; */
+   width:550px;
+   height:778px;
+}
+ 
+@media screen and (max-width: 480px) {
+    div[class="description"] {
+      width:280px;
+      margin:150px auto;
+      padding:30px 0;
+      text-align: center;
+      /* border: #282828 1px solid;  */
+    } 
+    .art h1{
+      font-size: 14px;
+      color:#2b2b2b;
+      font-weight:normal;
+   }
+   p[class="description"]{
+      margin-top:30px;
+      color:#7c7c7c;
+      font-size: 10px;
+   }
+   .art_image {
+      text-align: center;
+      margin-bottom:80px;
+   }
+    .A4{
+      width:340px;
+      height:481px;
+   }
+ }
