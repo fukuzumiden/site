@@ -4,7 +4,7 @@ body{
 }
 
 main[class="art-h1-scroll"]{
-   width:23600px;
+   width:18600px;
    height:100%;
    display:flex;
    /* overflow-x:scroll; */
