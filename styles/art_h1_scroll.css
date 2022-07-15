@@ -13,7 +13,7 @@ main[class="art-h1-scroll"]{
  }
  
 div[class="description"] {
-   margin:160px 200px 100px 300px;
+   margin:100px 200px 100px 300px;
    padding:20px 0;
    width:600px;
    height:600px;
@@ -55,14 +55,14 @@ div[class="art-image"]{
    margin:100px 0px 0px 100px;
 }
 .art-h1-scroll img{
-   width:550px;
-   height:778px;
+   width:400px;
+   height:565px;
 }
 
  
 @media screen and (max-width: 480px) {
    body{
-      overflow-y:hidden;
+      /* overflow-y:hidden; */
       text-size-adjust: none;
    }
    
