@@ -1,6 +1,6 @@
 
 body{
-   overflow-y:hidden;
+   /* overflow-y:hidden; */
 }
 
 main[class="art-h1-scroll"]{
@@ -14,9 +14,9 @@ main[class="art-h1-scroll"]{
  
 div[class="description"] {
    margin:100px 200px 100px 300px;
-   padding:20px 0;
+   padding:10px 0;
    width:600px;
-   height:600px;
+   height:500px;
    border: #282828 1px solid; 
  } 
 div[class="art-date"]{
@@ -25,7 +25,7 @@ div[class="art-date"]{
    color:#666666;
 }
 h1[class="title"]{
-   margin:110px 0 80px 0;
+   margin:80px 0 80px 0;
    text-align: center;
    font-size: 30px;
    color:#000000;
@@ -45,14 +45,14 @@ p[class="description2"]{
 }
 p[class="description3"]{
    text-align: center;
-   margin:20px 0;
+   margin:0px 0;
    color:#000000;
-   font-size: 100px;
+   font-size: 70px;
 }
 
 
 div[class="art-image"]{
-   margin:100px 0px 0px 100px;
+   margin:80px 0px 0px 100px;
 }
 .art-h1-scroll img{
    width:400px;
