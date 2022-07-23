@@ -1,5 +1,11 @@
 console.clear();
 
+//load audio
+const audiodata = document.getElementById('audiodata');
+const trax = ['/sound/eco.mp3', '/sound/sealoop_1.mp3', 'sound/rawsample.mp3','/sound/animalsas.mp3','/sound/drumtest.mp3','/sound/101mini.mp3'];
+const traxNo = Math.floor( Math.random() * trax.length)
+audiodata.src = trax[traxNo];
+
 
 // for cross browser
 const AudioContext = window.AudioContext || window.webkitAudioContext;
