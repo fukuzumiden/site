@@ -83,7 +83,7 @@ header h1 {
     height:100%;
     background-color: #fbfbf9;
     /* 欧文フォント　Verdana,"Helvetica Neue", */
-    font-family:serif,"游明朝体","Noto Serif JP","ヒラギノ明朝";
+    font-family:"游明朝体","Noto Serif JP","ヒラギノ明朝",serif;
  }
 
  div[class="captions"]{
@@ -239,7 +239,7 @@ footer p,footer a{
       height: 1300px;
       background-color: #fbfbf9;
       /* 欧文フォント　Verdana,"Helvetica Neue", */
-      font-family:serif,"游明朝体","Noto Serif JP","ヒラギノ明朝";
+      font-family:"游明朝体","Noto Serif JP","ヒラギノ明朝",serif;
    }
 
      .caption span{
