@@ -83,7 +83,7 @@ header h1 {
     height:100%;
     background-color: #fbfbf9;
     /* 欧文フォント　Verdana,"Helvetica Neue", */
-    font-family:serif,"游明朝 Medium","游明朝体","Noto Serif JP","ヒラギノ明朝";
+    font-family:serif,"游明朝体","Noto Serif JP","ヒラギノ明朝";
  }
 
  div[class="captions"]{
@@ -200,7 +200,7 @@ footer p,footer a{
    text-align:center;
    color:#6f6f6f;
    font-size:12px;
-   font-family: "游明朝 Medium","游明朝体","Noto Serif JP","ヒラギノ明朝",serif;
+   font-family: "游明朝体","Noto Serif JP","ヒラギノ明朝",serif;
 }
 
 
@@ -226,7 +226,7 @@ footer p,footer a{
         margin: 0; padding: 0;
         font-size: 18px;
         font-weight: normal;
-        font-family: "游明朝 Medium","游明朝体","Noto Serif JP","ヒラギノ明朝",serif;
+        font-family: "游明朝体","Noto Serif JP","ヒラギノ明朝",serif;
      }
 
      header li {
@@ -239,7 +239,7 @@ footer p,footer a{
       height: 1300px;
       background-color: #fbfbf9;
       /* 欧文フォント　Verdana,"Helvetica Neue", */
-      font-family:serif,"游明朝 Medium","游明朝体","Noto Serif JP","ヒラギノ明朝";
+      font-family:serif,"游明朝体","Noto Serif JP","ヒラギノ明朝";
    }
 
      .caption span{
@@ -349,6 +349,6 @@ footer p,footer a{
     footer p,footer a{
         color:#6f6f6f;
         font-size:8px;
-        font-family: "游明朝 Medium","游明朝体","Noto Serif JP","ヒラギノ明朝",serif;
+        font-family: "游明朝体","Noto Serif JP","ヒラギノ明朝",serif;
     }
  }
