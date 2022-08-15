@@ -211,7 +211,6 @@ footer p,footer a{
  @media screen and (max-width: 480px) {
     body{
         width:480px;
-        font-family:"Yu Mincho Demibold", YuMincho, "Hiragino Mincho ProN", serif;
     }
 
     header {
@@ -240,6 +239,7 @@ footer p,footer a{
       margin:15% 0 0 0;
       height: 1300px;
       background-color: #fbfbf9;
+      font-family:"Yu Mincho Demibold", YuMincho, "Hiragino Mincho ProN", serif;
       /* 欧文フォント　Verdana,"Helvetica Neue", */
       /* font-family:"游明朝体","Noto Serif JP","ヒラギノ明朝",serif; */
    }
@@ -312,7 +312,7 @@ footer p,footer a{
       padding: 0 10px;
       padding-bottom:30px;
       width:calc((100% - 10px * 2) / 2);
-      background-color: #fff;
+      background-color: #fbfbf9;
       text-align:center;
     }
     .item img{
