@@ -142,7 +142,7 @@ header h1 {
  }
  .tanka p{
     padding-left:30%;
-    margin-bottom:250px;
+    margin-bottom:240px;
     font-size: 19px;
     white-space:nowrap;
  }
@@ -243,6 +243,12 @@ footer p,footer a{
       /* 欧文フォント　Verdana,"Helvetica Neue", */
       /* font-family:"游明朝体","Noto Serif JP","ヒラギノ明朝",serif; */
    }
+   
+   div[class="captions"]{
+      padding: 2% 10%;
+      height:1000px;
+      background-color: #fbfbf9;
+   }
 
      .caption span{
         padding-left:4px;
@@ -251,9 +257,9 @@ footer p,footer a{
      }
 
      .caption li {
-        padding: 10% 0 10% 0;
+        padding: 5% 0 5% 0;
         margin-bottom:30px;
-        font-size: 15px;
+        font-size: 16px;
      }
 
      div[class="profile"]{
