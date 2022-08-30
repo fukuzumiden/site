@@ -128,23 +128,41 @@ header h1 {
  }
  .date{
     padding-left:23.7%;
-    /* text-align:center; */
-    padding-top:30px;
+    margin-top:30px;
     color:#818181;
     font-family: "Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3","游ゴシック","游ゴシック体 Medium",sans-serif;
  }
- .tanka h1{
+ .tanka h1{ /*タイトル*/
     margin: 150px 0 200px 0; 
     font-size: 17px;
     color:#4b4b4b;
     text-align: center;
     font-weight:normal;
  }
- .tanka p{
+ .tanka .prose{ /*文章*/
+   padding-left:30%;
+   margin:0px 0px;
+   font-size: 15.5px;
+   line-height: 190%;
+   white-space:nowrap;
+   font-weight:normal;
+ }
+ .tanka .kotoba{ /*詞書*/
+   padding-left:32%;
+   margin:10px 0px;
+   font-size: 14px;
+   white-space:nowrap;
+   font-weight:normal;
+ }
+ .tanka p{ /*短歌一首*/
+    padding:0px 0;
     padding-left:30%;
-    margin-bottom:240px;
-    font-size: 19px;
+    margin:20px 0;
+    font-size: 20px;
     white-space:nowrap;
+ }
+ .tanka .blank{ /*短歌間の空行用*/
+   margin:260px 0;
  }
 
 main[class="art-item"]{
@@ -294,7 +312,7 @@ footer p,footer a{
     
     .tanka p{
         padding-left:9%;
-        margin-bottom:140px;
+        /* margin-bottom:140px; */
         font-size: 12px;
     }
     rt{
