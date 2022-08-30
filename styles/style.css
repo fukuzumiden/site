@@ -151,6 +151,7 @@ header h1 {
    padding-left:32%;
    margin:10px 0px;
    font-size: 14px;
+   line-height: 190%;
    white-space:nowrap;
    font-weight:normal;
  }
