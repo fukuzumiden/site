@@ -168,7 +168,7 @@ header h1 {
 
 main[class="note"]{
    margin:5% 28%;
-   line-height: 190%;
+   line-height: 200%;
 }
 .note p{
    margin-bottom:20px;
@@ -184,7 +184,7 @@ main[class="note"]{
 }
 .note .kotoba{
    padding-left:70px;
-   font-size: 12px;
+   font-size: 13px;
    font-weight:bold;
 }
 .note .tanka{
