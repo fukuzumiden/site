@@ -106,7 +106,7 @@ header h1 {
  }
 
 .caption li {
-    padding: 4% 0 4% 0;
+    padding: 2% 0 2% 0;
     font-size: 20px;
  }
  .caption a{
@@ -165,6 +165,43 @@ header h1 {
  .tanka .blank{ /*短歌間の空行用*/
    margin:260px 0;
  }
+
+main[class="note"]{
+   margin:5% 31.5%;
+   line-height: 160%;
+}
+.note p{
+   margin-bottom:20px;
+   font-size: 15px;
+   color:#1d1d1d;
+   font-family: "メイリオ", "Meiryo", sans-serif;
+}
+.note .quote{
+   margin:30px 0;
+   padding-top:27px;
+   padding-bottom:20px;
+   background-color: rgb(238, 238, 238);
+}
+.note .kotoba{
+   padding-left:70px;
+   font-size: 12px;
+   font-weight:bold;
+}
+.note .tanka{
+   padding:0 50px;
+   font-size: 16px;
+   font-weight:bold;
+   margin:0px 0;
+   /* text-align: center; */
+}
+.note .source{
+   padding:0 30px;
+   font-size: 16px;
+   margin:10px 0;
+   text-align:right;
+}
+
+
 
 main[class="art-item"]{
    margin:8% 0 0 0;
@@ -337,6 +374,41 @@ footer p,footer a{
     rt{
       zoom: 0.7;
     }
+
+    main[class="note"]{
+      margin:5% 7%;
+      line-height: 160%;
+   }
+   .note p{
+      margin-bottom:20px;
+      font-size: 16px;
+      color:#1d1d1d;
+      font-family: "メイリオ", "Meiryo", sans-serif;
+   }
+   .note .quote{
+      margin:15px 0;
+      padding-top:27px;
+      padding-bottom:20px;
+      background-color: rgb(238, 238, 238);
+   }
+   .note .kotoba{
+      padding:0 10px;
+      font-size: 10px;
+      /* font-weight:bold; */
+   }
+   .note .tanka{
+      padding:0 20px;
+      font-size: 16px;
+      font-weight:bold;
+      margin:0px 0;
+      /* text-align: center; */
+   }
+   .note .source{
+      padding:0 30px;
+      font-size: 11px;
+      margin:10px 0;
+      text-align:right;
+   }
 
    
     main[class="art-item"]{
