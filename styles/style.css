@@ -167,12 +167,12 @@ header h1 {
  }
 
 main[class="note"]{
-   margin:5% 30%;
-   line-height: 160%;
+   margin:5% 28%;
+   line-height: 190%;
 }
 .note p{
    margin-bottom:20px;
-   font-size: 15px;
+   font-size: 19px;
    color:#1d1d1d;
    font-family: "メイリオ", "Meiryo", sans-serif;
 }
@@ -189,14 +189,14 @@ main[class="note"]{
 }
 .note .tanka{
    padding:0 30px;
-   font-size: 15px;
+   font-size: 18px;
    font-weight:bold;
    margin:0px 0;
    /* text-align: center; */
 }
 .note .source{
    padding:0 30px;
-   font-size: 15px;
+   font-size: 17px;
    margin:10px 0;
    text-align:right;
 }
