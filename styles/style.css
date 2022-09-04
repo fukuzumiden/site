@@ -167,7 +167,7 @@ header h1 {
  }
 
 main[class="note"]{
-   margin:5% 31.5%;
+   margin:5% 30%;
    line-height: 160%;
 }
 .note p{
@@ -188,15 +188,15 @@ main[class="note"]{
    font-weight:bold;
 }
 .note .tanka{
-   padding:0 50px;
-   font-size: 16px;
+   padding:0 30px;
+   font-size: 15px;
    font-weight:bold;
    margin:0px 0;
    /* text-align: center; */
 }
 .note .source{
    padding:0 30px;
-   font-size: 16px;
+   font-size: 15px;
    margin:10px 0;
    text-align:right;
 }
