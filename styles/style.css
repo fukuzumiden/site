@@ -134,6 +134,7 @@ header h1 {
  }
  .tanka h1{ /*タイトル*/
     margin: 150px 0 200px 0; 
+    /* padding-left:30%; */
     font-size: 17px;
     color:#4b4b4b;
     text-align: center;
@@ -159,11 +160,14 @@ header h1 {
     padding:0px 0;
     padding-left:30%;
     margin:20px 0;
-    font-size: 20px;
+    font-size: 17.5px;
     white-space:nowrap;
  }
  .tanka .blank{ /*短歌間の空行用*/
-   margin:260px 0;
+   margin:210px 0;
+ }
+ rt{
+   zoom: 0.7;
  }
 
 main[class="note"]{
@@ -194,6 +198,7 @@ main[class="note"]{
    margin:0px 0;
    /* text-align: center; */
 }
+
 .note .source{
    padding:0 30px;
    font-size: 17px;
@@ -369,7 +374,7 @@ footer p,footer a{
         margin:10px 0;
     }
     .tanka .blank{ /*短歌間の空行用*/
-      margin:200px 0;
+      margin:120px 0;
     }
     rt{
       zoom: 0.7;
