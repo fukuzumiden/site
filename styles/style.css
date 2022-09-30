@@ -162,6 +162,7 @@ header h1 {
     margin:20px 0;
     font-size: 17.5px;
     white-space:nowrap;
+    /* font-weight:bold; */
  }
  .tanka .blank{ /*短歌間の空行用*/
    margin:210px 0;
