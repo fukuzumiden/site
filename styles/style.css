@@ -152,7 +152,7 @@ header h1 {
    padding-left:32%;
    margin:10px 0px;
    font-size: 14px;
-   line-height: 190%;
+   line-height: 180%;
    white-space:nowrap;
    font-weight:normal;
  }
@@ -168,7 +168,7 @@ header h1 {
    margin:210px 0;
  }
  rt{
-   zoom: 0.7;
+   zoom: 0.8;
  }
 
 main[class="note"]{
