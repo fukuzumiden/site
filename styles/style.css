@@ -118,8 +118,8 @@ header h1 {
      height:1000px;
  }
  .profile a{
-    padding:5px;
-    margin-left:5px;
+    padding:5px 0;
+    /* margin-left:5px; */
  }
 
 
