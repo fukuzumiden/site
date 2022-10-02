@@ -245,6 +245,57 @@ main[class="art-item"]{
    font-weight:normal;
  }
 
+ .popup {
+   width:100%;
+   height:120%;
+   background: rgba(0,0,0,1);
+   position:fixed;
+   top: 0;
+   left: 0;
+   z-index: 100;
+   transition: .4s ease;
+   font-family: "メイリオ", "Meiryo", "HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO",sans-serif;
+ }
+ .popup.ok {
+   opacity: 0;
+   visibility: hidden;
+   z-index: -1;
+ }
+ .popup-inner {
+   max-width: 360px;
+   width:85%;
+   padding: 20px;
+   position:absolute;
+   top:30%;
+   left:50%;
+   transform: translate(-50%,-50%);
+   background-color:#fff;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+ .popup-inner p {
+   padding-bottom: 20px;
+ }
+ .popup-wrap{
+   display:flex;
+ }
+ .popup a{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   width:80px;
+   height:50px;
+   margin:0 30px;
+ }
+ .popup a:hover{
+   padding:0.5em;
+   color:rgb(255, 255, 255);
+   background:#000000;
+   cursor:pointer;
+ }
+
 
 
  footer {
