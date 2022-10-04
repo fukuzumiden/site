@@ -4,11 +4,11 @@ if($.cookie("disappear") != "ok"){
     $(".popup").addClass("ok");
 }
 
-$(".popup-no").on('click',function(){
+$(".popup-yes").on('click',function(){
     $.cookie("disappear", "ok", { expires: 30, path: "/" });
 	$(".popup").addClass("ok");
 });
 
-$(".popup-yes").on('click',function(){
+$(".popup-no").on('click',function(){
     window.location.href = "/text.html";
 });
