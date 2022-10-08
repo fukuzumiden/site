@@ -146,7 +146,7 @@ header h1 {
    padding:0 30%;
    margin:0px 0px;
    font-size: 15.5px;
-   line-height: 190%;
+   line-height: 220%;
    white-space:nowrap;
    font-weight:normal;
  }
@@ -410,7 +410,7 @@ footer p,footer a{
       padding-left:9%;
       margin:0px 0px;
       font-size: 10px;
-      line-height: 190%;
+      line-height: 210%;
       white-space:nowrap;
       font-weight:normal;
     }
