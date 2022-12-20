@@ -169,6 +169,28 @@ header h1 {
  .tanka .blank{ /*短歌間の空行用*/
    margin:210px 0;
  }
+
+ .tanka-darktheme h1{ 
+   margin: 150px 0 200px 0; 
+   /* padding-left:30%; */
+   font-size: 17px;
+   color:#e8e8e8;
+   text-align: center;
+   font-weight:normal;
+   text-shadow: 0 0 1px rgb(255, 255, 255),0 0 5px #fff;
+}
+.tanka-darktheme p{ 
+   padding:0px 0;
+   padding-left:30%;
+   margin:20px 0;
+   font-size: 17.5px;
+   color:#ffffff;
+   white-space:nowrap;
+}
+.tanka-darktheme .blank{ 
+  margin:210px 0;
+}
+
  rt{
    zoom: 0.8;
  }
@@ -300,17 +322,17 @@ main[class="art-item"]{
 
 
 
- footer {
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    padding:0 21%;
-    padding-top:1%;
-    padding-bottom:4%;
-    background-color: #fbfbf9;
-    /* border-top-style: solid; */
-    border-width: 1px;
-    border-color:#c1c1c1;
+footer {
+   width: 95%;
+   margin-left: auto;
+   margin-right: auto;
+   padding:0 21%;
+   padding-top:1%;
+   padding-bottom:2%;
+   background-color: #fbfbf9;
+   /* border-top-style: solid; */
+   border-width: 1px;
+   border-color:#c1c1c1;
 }
 footer p,footer a{
    text-align:center;
@@ -352,7 +374,7 @@ footer p,footer a{
 
      body {
       margin:15% 0 0 0;
-      height: 1300px;
+      /* height: 1300px; */
       background-color: #fbfbf9;
       font-family:"Yu Mincho Demibold", YuMincho, "Hiragino Mincho ProN", serif;
       /* 欧文フォント　Verdana,"Helvetica Neue", */
@@ -431,6 +453,26 @@ footer p,footer a{
     .tanka .blank{ /*短歌間の空行用*/
       margin:120px 0;
     }
+
+    .tanka-darktheme h1{
+      margin: 100px 0; 
+      padding: 0 0;
+      font-size: 10px;
+      color:#dedede;
+      text-align: center;
+      font-weight: normal;
+      text-shadow: 0 0 1px rgb(255, 255, 255),0 0 5px #fff;
+   }
+   .tanka-darktheme p{
+      padding-left:9%;
+      /* margin-bottom:140px; */
+      font-size: 11px;
+      color:#e9e9e9;
+      margin:10px 0;
+  }
+  .tanka-darktheme .blank{ /*短歌間の空行用*/
+    margin:120px 0;
+  }
     rt{
       zoom: 0.5;
     }
