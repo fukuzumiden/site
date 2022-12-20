@@ -2,7 +2,7 @@ console.clear();
 
 //load audio
 const audiodata = document.getElementById('audiodata');
-const trax = ['/sound/eco.mp3', '/sound/sealoop_1.mp3', 'sound/rawsample.mp3','/sound/animalsas.mp3','/sound/drumtest.mp3','/sound/101mini.mp3'];
+const trax = ['/sound/sealoop_1.mp3', 'sound/rawsample.mp3','/sound/animalsas.mp3','/sound/drumtest.mp3','/sound/101mini.mp3','/sound/101hiresrave.mp3','/sound/606roy.mp3','/sound/606303noise.mp3','/sound/bd.mp3','/sound/day.mp3','/sound/hohohoi.mp3','/sound/lfoacid.mp3','/sound/puredataacid1.mp3','/sound/puredataacid2.mp3'];
 const traxNo = Math.floor( Math.random() * trax.length)
 audiodata.src = trax[traxNo];
 

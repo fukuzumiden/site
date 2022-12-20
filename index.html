@@ -41,10 +41,10 @@
       
       <div class="boombox-body">
         <section class="master-controls">
-          <input type="range" id="volume" class="control-volume" min="0" max="2" value="1" list="gain-vals" step="0.01" data-action="volume" />
+          <input type="range" id="volume" class="control-volume" min="0" max="0.5" value="0.5" list="gain-vals" step="0.01" data-action="volume" />
           <datalist id="gain-vals">
             <option value="0" label="min">
-            <option value="2" label="max">
+            <option value="0.5" label="max">
           </datalist>
           
           <button class="control-power" role="switch" aria-checked="false" data-power="on">
@@ -52,7 +52,6 @@
           </button>
         </section>
       </div>
-      
     </div>
 
     <script src="/js/player.js"></script>
