@@ -170,6 +170,16 @@ header h1 {
    margin:210px 0;
  }
 
+ .haiku-v p{
+   writing-mode: vertical-rl;
+   text-align: center;
+   padding:0px 0;
+   /* padding-left:30%;
+   margin:20px 0; */
+   font-size: 17.5px;
+   /* white-space:nowrap; */
+ }
+
  .tanka-darktheme h1{ 
    margin: 150px 0 200px 0; 
    /* padding-left:30%; */
