@@ -91,7 +91,8 @@ header h1 {
  div[class="captions"]{
     padding: 0 23.5%;
     margin-top:4vh;
-    height:1000px;
+    margin-bottom:10vh;
+    /* height:1000px; */
     background-color: #fbfbf9;
  }
 
