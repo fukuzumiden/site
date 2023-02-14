@@ -15,6 +15,12 @@ main[class="art"]{
    color:#2b2b2b;
    font-weight:normal;
 }
+.art h2{
+   font-size: 17px;
+   color:#2b2b2b;
+   font-weight:normal;
+   font-family:"Yu Mincho Demibold", YuMincho, "Hiragino Mincho ProN", serif;
+}
 p[class="description"]{
    margin-top:40px;
    color:#7c7c7c;
@@ -32,6 +38,18 @@ p[class="description"]{
    height:842px; */
    width:400px;
    height:565px;
+}
+.raw{
+   width:22%;
+   border: solid 0.5px
+}
+.lsz{
+   width:25%;
+   border: solid 0.5px
+}
+.alc{
+   width:32%;
+   border: solid 0.5px
 }
  
 @media screen and (max-width: 480px) {
