@@ -16,7 +16,7 @@ main[class="art"]{
    font-weight:normal;
 }
 .art h2{
-   font-size: 17px;
+   font-size: 20px;
    color:#2b2b2b;
    font-weight:normal;
    font-family:"Yu Mincho Demibold", YuMincho, "Hiragino Mincho ProN", serif;
@@ -48,7 +48,7 @@ p[class="description"]{
    border: solid 0.5px
 }
 .alc{
-   width:32%;
+   width:30%;
    border: solid 0.5px
 }
  
