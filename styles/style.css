@@ -350,14 +350,14 @@ main[class="art-item"]{
 
 
 footer {
-   width: 95%;
+   width: 100%;
    margin-left: auto;
    margin-right: auto;
    padding:0 21%;
    padding-top:1%;
    padding-bottom:2%;
    background-color: #fbfbf9;
-   /* border-top-style: solid; */
+   border-top-style: solid;
    border-width: 1px;
    border-color:#c1c1c1;
 }
