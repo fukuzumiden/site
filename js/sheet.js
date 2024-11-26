@@ -1,6 +1,6 @@
 function setup() {
     let margin = 0;
-    let canvas = createCanvas(windowWidth, windowHeight);
+    let canvas = createCanvas(windowWidth, windowHeight*0.8);
     canvas.parent('canvas');
 
     textFont("'Yu Mincho Demibold', YuMincho, 'Hiragino Mincho ProN', serif");
@@ -9,8 +9,7 @@ function setup() {
 }
 
 function windowResized() {
-    resizeCanvas(windowWidth, windowHeight);
-    // redraw();
+    resizeCanvas(windowWidth, windowHeight*0.8);
 }
   
 function draw() {
@@ -61,7 +60,6 @@ function draw() {
             text("電",(12*3*int(random(2,60))+7.8),(12*3*int(random(2,30))+7.8));
         }
     }
-
-    noloop();
+    noLoop();
 }
 

@@ -41,7 +41,7 @@ ul {
 
  header {
     width: 100%;
-    padding: 1% 23.5%;
+    padding: 10px 23.5%;
     background-color: #fbfbf9;
     position: fixed;
     z-index: 1000;
@@ -357,7 +357,7 @@ footer {
    padding-top:1%;
    padding-bottom:2%;
    background-color: #fbfbf9;
-   border-top-style: solid;
+   /* border-top-style: solid; */
    border-width: 1px;
    border-color:#c1c1c1;
 }
@@ -588,7 +588,7 @@ footer p,footer a{
         padding-top:1%;
         padding-bottom:4%;
         background-color: #fbfbf9;
-        border-top-style: solid;
+        /* border-top-style: solid; */
         border-width: 1px;
         border-color:#c1c1c1;
     }
