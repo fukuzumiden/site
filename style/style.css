@@ -17,14 +17,14 @@ src: url("/fonts/C64_Pro_Mono-STYLE.woff2") format("woff2");
 
 html {
     font-family: "wapuro-mincho";
-    font-size: 14px;
+    font-size: 12px;
     max-width: 800px;
     margin: 0 auto;
     background: var(--color-light);
 }
 
 body {
-    margin: 3% 5%;
+    margin: 5% 5%;
     padding: 20px 3px;
     background: var(--color-dark);
     color: var(--color-light);
@@ -42,14 +42,11 @@ a {
 
 p {
     margin: 1em 0;
+    line-height: 1.2em;
 }
 
 .heading {
     margin-top: 1em;
-}
-
-.tanka p {
-    margin: 80px 0;
 }
 
 .blink {
