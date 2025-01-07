@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "wapuro-mincho";
+    src: url("/fonts/wapuro-mincho.otf") format("opentype");
+    src: url("/fonts/wapuro-mincho.woff2") format("woff2");
+  }
+
+@font-face {
+font-family: "C64_Pro_Mono-STYLE";
+src: url("/fonts/C64_Pro_Mono-STYLE.otf") format("opentype");
+src: url("/fonts/C64_Pro_Mono-STYLE.woff2") format("woff2");
+}
+
+:root {
+    --color-light: rgb(165, 165, 255);
+    --color-dark: rgb(66, 66, 232);
+}
+
+html {
+    font-family: "wapuro-mincho";
+    font-size: 14px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--color-light);
+}
+
+body {
+    margin: 3% 5%;
+    padding: 20px 3px;
+    background: var(--color-dark);
+    color: var(--color-light);
+}
+
+a:hover {
+    background: var(--color-light);
+    color: var(--color-dark);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    margin: 1em 0;
+}
+
+.heading {
+    margin-top: 1em;
+}
+
+.tanka p {
+    margin: 80px 0;
+}
+
+.blink {
+    animation: blink 1s step-end infinite;
+ }
+
+ @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+  }
